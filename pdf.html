@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Новый проект</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#"><!--[if lte IE 10]>
+    <p class="browser-upgrade">Вы используете устаревшую версию браузера. Пожалуйста </p><a class="browser-upgrade__link" href="http://browsehappy.com/">обновите свой браузер</a><![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="dieta">
+          <div class="first-week">
+            <h1 class="first-week__title">День 1</h1>
+            <div class="breakfast">Завтрак</div>
+            <ul class="meals-list">
+              <li class="meals__item">Творожные оладьи
+                <input type="radio" name="breakfasts" value="breakfasts_1">
+              </li>
+              <li class="meals__item">Овсяноблин с творогом и бананом
+                <input type="radio" name="breakfasts" value="breakfasts_2">
+              </li>
+            </ul>
+            <div class="breakfast">Обед</div>
+            <ul class="meals-list">
+              <li class="meals__item">Блюдо на обед №1
+                <input type="radio" name="dinner" value="dinner_1">
+              </li>
+              <li class="meals__item">Блюдо на обед №2
+                <input type="radio" name="dinner" value="dinner_2">
+              </li>
+            </ul>
+            <div class="breakfast">Ужин</div>
+            <ul class="meals-list">
+              <li class="meals__item">Блюдо на ужин №1
+                <input type="radio" name="supper" value="supper_1">
+              </li>
+              <li class="meals__item">Блюдо на ужин №2
+                <input type="radio" name="supper" value="supper_2">
+              </li>
+            </ul>
+          </div>
+          <button class="dieta-accept" id="dieta-accept">Подтвердить выбор</button>
+          <button class="dieta-download" id="dieta-download">Скачать диету</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js/pdfmake.min.js"></script>
+<script src="js/vfs_fonts.js"></script>
+<script src="js/pdf-make.js"></script>
